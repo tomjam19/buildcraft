@@ -4,12 +4,12 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCKv0s2RfBbZbiFaIgydVdSvbnEKtBGQAg",
-  authDomain: "buildcraft-ai.firebaseapp.com",
-  projectId: "buildcraft-ai",
-  storageBucket: "buildcraft-ai.appspot.com",
-  messagingSenderId: "927889187714",
-  appId: "1:927889187714:web:00ff30c0c255fa008c2320"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
