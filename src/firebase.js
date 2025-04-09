@@ -1,3 +1,5 @@
+console.log("🔥 ENV CHECK", import.meta.env.VITE_FIREBASE_API_KEY);
+console.log("🌐 Full ENV", import.meta.env);
 
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
