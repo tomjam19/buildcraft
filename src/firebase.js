@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 
 console.log("🚨 Using TEMP hardcoded Firebase config");
 
@@ -11,4 +12,7 @@ const firebaseConfig = {
   appId: "1:927889187714:web:00ff30c0c255fa008c2320"
 };
 
-export const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+export { app, auth };seConfig);
